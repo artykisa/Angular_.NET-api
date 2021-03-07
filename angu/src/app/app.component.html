@@ -1,0 +1,48 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <table border="1" align="center">
+    <caption id="caption">Table of Users</caption>
+    <tr>
+      <th id="col1">Firstname</th>
+      <th id="col2">Lastname</th>
+      <th id="col3">Email</th>
+    </tr>
+    <tr *ngFor="let user of users"><td id="colfn">{{user?.firstName}}</td><td id="coln">{{user?.lastName}}</td><td id="colem">{{user?.email}}</td></tr>
+  </table>
+</div>
+
+<div>
+  <select  class="select"  (change)="onChange($event)">
+    <option *ngFor="let v of values" [value]="v">{{v}}</option>
+  </select>
+
+  <select  class="select"  (change)="onChangePages($event)">
+    <option *ngFor="let v of pages" [value]="v">{{v}}</option>
+  </select>
+</div>
+
+<div class="buttons">
+  <button class="button" (click)="onXmlDownload()">Download list in xml </button>
+  <button class="button" (click)="onTxtDownload()">Download list in txt </button>
+  <button class="button" (click)="onGroupDownload()">Download grouped list </button>
+</div>
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+

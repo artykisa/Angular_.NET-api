@@ -1,0 +1,16 @@
+{
+  "userList":
+  [{
+    "firstname": "Bob",
+    "lastname": "Fisher",
+    "email": "chess@gmail.com"
+  },{
+    "firstname": "Bob",
+    "lastname": "Fisher",
+    "email": "chess@gmail.com"
+  },{
+    "firstname": "Bob",
+    "lastname": "Fisher",
+    "email": "chess@gmail.com"
+  }]
+}
